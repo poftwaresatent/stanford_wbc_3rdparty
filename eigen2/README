@@ -1,0 +1,26 @@
+Eigen is a C++ template library for linear algebra: vectors, matrices,
+and related algorithms.
+
+http://eigen.tuxfamily.org/
+
+Released (at your option) either under the LGPL, version 3 or later,
+or under the GPL, version 2 or later.
+
+Tarball of eigen-2.0.15 with a little build script.
+
+Use the enclosed buildme.sh script for building and installing
+on your system. For a staged installation under the current working
+directory, just type (NOTE: you need cmake for this):
+
+ $ ./buildme.sh
+
+Which ends up installing into include/ and lib/. In order
+to install elsewhere, just give the prefix as command line
+argument. For example, to install into /usr/local/eigen2 do
+the following:
+
+ $ ./buildme.sh /usr/local/eigen2
+
+The build script will attempt to install there, and if that fails it
+will retry using sudo. So you do not have to run th e entire build as
+root.
